@@ -1,0 +1,1 @@
+{"version":1,"defects":{"OperacionesTest::testSuma":8,"OperacionesTest::testSumaNulos":8,"OperacionesTest::testSumaValores":8,"OperacionesTest::testSumaLetras":8},"times":{"OperacionesTest::testSuma":0.002,"OperacionesTest::testSumaNulos":0.004,"OperacionesTest::testSumaValores":0,"OperacionesTest::testSumaLetras":0}}

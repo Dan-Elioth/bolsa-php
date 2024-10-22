@@ -1,0 +1,120 @@
+/* Estilos para tooltips */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Estilos comunes para todos los tooltips */
+.tooltips {
+    visibility: hidden;
+    background-color: #333;
+    color: #ffffff;
+    font-size: 0.65rem;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 0.3rem;
+    width: max-content;
+    max-width: 10rem;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Mostrar el tooltip al hacer hover sobre el contenedor */
+.tooltip-container:hover .tooltip-top {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-container:hover .tooltip-bottom {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-container:hover .tooltip-left {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-container:hover .tooltip-right {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Estilos para tooltip hacia arriba */
+.tooltip-top {
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Flecha o arrow para el tooltip hacia arriba */
+.tooltip-top::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+/* Estilos para tooltip hacia abajo */
+.tooltip-bottom {
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Flecha o arrow para el tooltip hacia abajo */
+.tooltip-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+}
+
+/* Estilos para tooltip hacia la izquierda */
+.tooltip-left {
+    top: 50%;
+    right: 125%;
+    transform: translateY(-50%);
+}
+
+/* Flecha o arrow para el tooltip hacia la izquierda */
+.tooltip-left::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #333;
+}
+
+/* Estilos para tooltip hacia la derecha */
+.tooltip-right {
+    top: 50%;
+    left: 103%;
+    transform: translateY(-50%);
+}
+
+/* Flecha o arrow para el tooltip hacia la derecha */
+.tooltip-right::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #333 transparent transparent;
+}
